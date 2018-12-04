@@ -1,0 +1,5 @@
+en:
+  models:
+    bill_line:
+      attributes:
+        concept: 'Concept'

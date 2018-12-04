@@ -1,0 +1,15 @@
+en:
+  views:
+    show: 'Show'
+    edit: 'Edit'
+    destroy: 'Destroy'
+    back: 'Back'
+    confirm: 'Are you sure?'
+    bills:
+      title_plural: 'Bills'
+      editing: 'Editing Bill'
+      new: 'New Bill'
+      bill_lines:
+        concepts: 'Concepts'
+      errors:
+        prohibited_being_saved: 'prohibited this bill from being saved'

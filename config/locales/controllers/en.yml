@@ -1,0 +1,6 @@
+en:
+  controllers:
+    bills:
+      successfully_created: 'Bill was successfully created.'
+      successfully_updated: 'Bill was successfully updated.'
+      successfully_destoyed: 'Bill was successfully destroyed.'

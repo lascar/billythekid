@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t("views.bills.title_plural") %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+    <tr>
+      <th title="<%= t('models.bill_line.attributes.concept') %>">
+        <%= t('models.bill_line.attributes.concept') %>
+      </th>
+      <th scope="col" colspan="3"></th>
+    </tr>
+
+  <tbody>
+    <% @bills.each do |bill| %>
+      <tr>
+        <td title="<%= t('views.bills.bill_lines.concepts') %>">
+          <% bill.bill_lines.each do |bill_line| %>
+            <%= bill_line.concept %>
+            <br>
+          <% end %>
+        </td>
+        <td><%= link_to t("views.show"), bill %></td>
+        <td><%= link_to t("views.edit"), edit_bill_path(bill) %></td>
+        <td><%= link_to t("views.destroy"), bill, method: :delete, data: { confirm: t("views.confirm") } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('views.bills.new'), new_bill_path %>
